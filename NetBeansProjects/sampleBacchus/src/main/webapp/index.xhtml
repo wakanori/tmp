@@ -3,15 +3,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
-        <title>Facelet Title</title>
+        <title>店舗ホーム</title>
+        <link rel="stylesheet" type="text/css" href="css/mystyles.css" />
     </h:head>
     <h:body>
-        Hello from Facelets<br/>
-        表示項目：#{sampleBean.str1}
+        <div id="home">バックス</div>
+        店舗ホーム
+        <a href="register.xhtml">新店舗登録</a>
+        <a href="viewShopList.xhtml">店舗一覧</a>
+        
+        <!--
         <h:form>
-            <h:commandButton value="再表示" action="#{sampleBean.replace()}"/>
             <h:commandButton value="登録" action="#{sampleBean.next()}"/>
         </h:form>
+        -->
     </h:body>
 </html>
 

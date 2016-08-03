@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package package1;
+package presentation;
 
 import javax.inject.Named;
 import javax.enterprise.context.RequestScoped;
@@ -12,19 +12,12 @@ import javax.enterprise.context.RequestScoped;
  *
  * @author noriaki
  */
-@Named(value = "sampleBean")
+@Named(value = "sampleManagedBean")
 @RequestScoped
-public class SampleBean {
-    
-    private String str1 = "";
-    private String str2 = "";
-    
-    public void replace() {
-        str1 = "再表示";
-    }
+public class SampleManagedBean {
 
     public String next() {
-        return "regist.xhtml";
+        return "register.xhtml";
     }
     
 }
